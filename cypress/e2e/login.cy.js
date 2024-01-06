@@ -8,7 +8,7 @@
 ///<reference types ="Cypress"/>
 
 describe('Login Functional Test', () => {
-  it('Successful login with incorrect password and email', () => {
+  it('Successful login with correct password and email', () => {
     cy.visit('https://www.saucedemo.com/')
     cy.title().should('eq', 'Swag Labs');    
     cy.get('[data-test="username"]').type('standard_user')
